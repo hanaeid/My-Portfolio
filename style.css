@@ -1,0 +1,625 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    
+    align-items: center;
+    height: 70px;
+    background-color: #d6f8c0c0;
+    z-index: 3000;
+
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 50px;
+    height: 100%;
+
+}
+nav .logo a{
+    color:#66a240;
+    font-family: "Jost", sans-serif;
+    text-decoration: none;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0px 50px 0px 0px; 
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #66a240;
+}
+nav a.active{
+    color: #f3c910d0;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: #f3c910d0;
+    cursor: pointer;
+
+}
+nav .logo{
+    text-decoration: none;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+/* -----------First Section-------------------- */
+
+.containerr{
+    width: 100%; 
+}
+.firstsection{
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+    background-image: url(bgg.jpg);
+    background-size:cover ;
+    margin-top: 60px;    
+  
+}
+.firstsection .hello{
+    height: 250px;
+    position: relative;
+    top: 90px;
+    left: 150px;
+    line-height: 50px;
+
+} 
+.firstsection h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #66a240;
+    font-family: sans-serif;
+}
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0px; 
+    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+  }
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: black}
+    100% {border-right-color: transparent}
+  }
+  
+.firstsection h2{
+    color: #79b455;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding-top: 10px;
+
+}
+.firstsection .img{
+    height: 460px;
+    width: 460px;
+    border-radius: 50%;
+    background-color: #f3c910d0;
+    position: relative;
+    top: 20px;
+    right: 50px;
+}
+.firstsection img{
+    height: 440px;
+    width: 440px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+}
+.firstsection button{
+    width: 190px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #f3c910d0;
+    border-radius: 25px;
+    position: relative;
+    top: 10%;
+    left:20%;
+    cursor: pointer;
+    
+}
+.firstsection button:hover{
+    background-color: #f3c910a9;
+}
+@media screen and (max-width: 500px) {
+    nav{
+        width: 100%;
+        padding-top: 10px;   
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin-left: 10px;
+        height: 100%;
+    
+    }
+    nav ul li{
+        margin: 0px 9px 0px 0px;
+    
+    }
+    nav .logo a{
+        font-size: 28px; 
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    .containerr{
+        width: 100%;
+        height: 200px;
+        
+    }
+    .firstsection{
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+        height: 450px;
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+    .firstsection .hello{
+        
+        width: 100%;
+        height: 200px;
+        position: relative;
+        top: 0px;
+        left: 5px;  
+    } 
+    .firstsection h1{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        width: 100%;
+
+    }
+    .firstsection h2{
+        font-size: 25px;
+        line-height: 28px;
+        width: 100%;
+
+    }
+    .firstsection .img{
+        height: 270px;
+        width: 250px;
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+    .firstsection img{
+        height: 250px;
+        width: 250px;
+        position: relative;
+        top: 10px;
+        right: 0px;
+    }
+    .firstsection button{
+        width: 180px;
+        height: 35px;
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        background-color: #f3c910d0;
+        border-radius: 25px;
+        position: relative;
+        top: px;
+        left:20%;
+        cursor: pointer;
+    }
+
+}
+/* -----------Second Section-------------------- */
+
+.secondsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    left: 10%;
+    width: 80%;
+    height: 500px;
+    background-color: #ffffff;
+}
+.secondsection .aboutme{
+    width: 50%;  
+    height: 250px; 
+    background-image: url(about_shap_bg.png);
+    background-size: contain; 
+    
+}
+.secondsection .aboutme h1{
+    font-size: 45px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family:sans-serif;
+    padding-left: 30%;
+    color: #32333c;
+    position: relative;
+    top: 95px;   
+
+}
+.secondsection .aboutme h1::before{
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: #f3c910d0;
+    position: absolute;
+    top: 65px;
+
+    
+}
+.secondsection .aboutmetext{
+    width: 50%;
+}
+.secondsection .aboutmetext p{
+    font-size: 18px;
+    font-family:sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #8a8fa3;
+    transition: all 0.3s;
+
+}
+.secondsection button{
+    width: 160px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #f3c910d0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    top: 30px;
+}
+.secondsection button:hover{
+    background-color: #f3c910a9;
+}
+.secondsection button a{
+    text-decoration: none;
+    color: white;
+
+
+}
+@media screen and (max-width: 500px) {
+    .secondsection{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        left: 0%;
+        width: 100%;
+        height: 510px;
+    }
+    .secondsection .aboutme{
+        width: 100%;  
+        height: 200px;
+        background-image: url(about_shap_bg.png);
+        background-size: contain; 
+        
+    }
+    .secondsection .aboutme h1{
+        font-size: 45px;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 35px;
+        font-family:sans-serif;
+        color: #32333c;
+        position: relative;
+        top:30px;   
+    
+    }
+    .secondsection .aboutme h1::before{
+        content: '';
+        width: 150px;
+        position: absolute;
+        top: 55px;
+    
+        
+    }
+    .secondsection .aboutmetext{
+        width: 95%;
+    }
+    .secondsection .aboutmetext p{
+        font-size: 18px;
+        font-family:sans-serif;
+        font-weight: 400;
+        line-height: 28px;
+        color: #8a8fa3;
+        transition: all 0.3s;
+    
+    }
+    .secondsection button{
+        width: 150px;
+        height: 35px;
+        position: relative;
+        left:25%;
+        top: 0px;
+    }
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #ccfba6;
+    position:absolute;
+    left: 85%;    
+}
+
+
+/* -------------------Section Three --------------- */
+
+
+.thirdsection{
+    /* height: 850px; */
+    /* width: 100%; */
+    /* overflow-x: hidden; */
+}
+.title{
+    width: 100%;
+    height: 200px;
+    padding-top: 50px;
+}
+.title h1{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family:sans-serif;
+    color: #32333c;
+}
+.title h4{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family:sans-serif;
+    color: #32333c;
+    padding-top: 10px;
+}
+.title h4::before{
+    content: '';
+    width: 85px;
+    height: 2px;
+    background-color: #f3c910d0;
+    margin-top: 10px;
+    margin-right:15px ;
+}
+.title h4::after{
+    content: '';
+    width:85px;
+    height: 2px;
+    background-color: #f3c910d0;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.sectioncontent{
+    background-color: rgba(235, 232, 232, 0.356);
+    
+}
+.links{
+    /* background-color: rgb(241, 240, 240); */
+    height: 50px;
+    width: 500px;
+    display: flex;
+    position: relative;
+    bottom: 50px;
+    left: 33%;
+    border-top: 1px solid #838282;
+    border-bottom: 1px solid #838282;
+    cursor: pointer;
+
+    /* z-index: -1; */
+}
+
+.links a{
+    margin: 15px auto;  
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgb(133, 133, 133);
+    cursor: pointer;  
+}
+.links a:hover{
+    color: rgb(75, 75, 75);
+
+
+}
+
+
+#word{
+    width: 95%;
+   display: flex;
+   justify-content: space-evenly;
+   margin: 0px auto;
+   /* border-radius: 25px; */
+
+
+}
+#word .card{
+    width: 30%;
+    height: 450px;
+    background-color: #ddf7c956;
+    z-index: 2000;
+    margin-top: 15px;
+
+    
+}
+#word .card img{
+    width: 95%;
+    height: 250px;
+    border-radius: 25px 25px 0px 0px;
+    position: relative;
+    top: 2%;
+    left: 2.5%;
+    transition: transform .2s;
+}
+#word .card img:hover{
+    transform: scale(1.07);
+}
+#word .card video{
+    width: 95%;
+    height: 250px;
+    border-radius: 25px 25px 0px 0px;
+    position: relative;
+    top: 2%;
+    left: 2.5%;
+    transition: transform .2s;
+}
+#word .card p{
+    font-size: 15px;
+    font-family:sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    color: #8a8fa3;
+    transition: all 0.3s;
+    padding: 20px;
+}
+
+
+
+#front{
+    width: 95%;
+   display: flex;
+   justify-content: space-between;
+   margin: 0px auto;
+
+}
+#front .card{
+    width: 30%;
+    height: 500px;
+    background-color: #ddf7c956;
+    /* border-radius: 25px; */
+    z-index: 2000;
+
+    
+}
+#front .card img{
+    width: 95%;
+    height: 250px;
+    border-radius: 25px 25px 0px 0px;
+    position: relative;
+    top: 2%;
+    left: 2.5%;
+    transition: transform .2s;
+}
+#front .card img:hover{
+    transform: scale(1.07);
+}
+#front .card p{
+    font-size: 15px;
+    font-family:sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    color: #8a8fa3;
+    transition: all 0.3s;
+    padding: 20px;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    
+    .circle{
+        width: 250px;
+        height: 250px;
+        position:absolute;
+        left: 10%;
+        z-index: -1;
+    }
+    .thirdsection{
+        height: 750px;
+    }
+    .title{
+        width: 100%;
+        height: 150px;
+        padding-top: 40px;
+    }
+    .title h1{
+       
+        font-size: 40px;
+        
+    }
+    .title h4{
+        
+        font-size: 16px;
+        
+    }
+    .links{
+        /* background-color: rgb(241, 240, 240); */
+        height: 50px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        bottom: 50px;
+        left: 0%;
+        border-top: 1px solid #838282;
+        border-bottom: 1px solid #838282;
+        cursor: pointer;
+    
+        /* z-index: -1; */
+    }
+    
+    .links a{
+        margin: 15px auto;  
+        font-size: 15px;
+        
+    }
+    .links a:hover{
+        color: rgb(75, 75, 75);
+    
+    
+    }
+    #word{
+        width: 95%;
+       display: flex;
+       align-items: center;
+       flex-direction: column;       margin: 0px auto;
+    }
+    #word .card{
+        width: 100%;
+        height: 550px;
+        margin-bottom: 15px;
+        
+    }  
+    #front{
+        width: 95%;
+       display: flex;
+       align-items: center;
+       flex-direction: column;       margin: 0px auto;
+    }
+    #front .card{
+        width: 100%;
+        height: 550px;
+        margin-bottom: 15px;
+        
+    }
+}
