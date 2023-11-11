@@ -505,14 +505,14 @@ nav .logo{
 
 
 
-#front{
+#front, #front2{
     width: 95%;
    display: flex;
    justify-content: space-between;
    margin: 0px auto;
 
 }
-#front .card{
+#front .card , #front2 .card{
     width: 30%;
     height: 500px;
     background-color: #ddf7c956;
@@ -521,7 +521,7 @@ nav .logo{
 
     
 }
-#front .card img{
+#front .card img, #front2 .card img{
     width: 95%;
     height: 250px;
     border-radius: 25px 25px 0px 0px;
@@ -530,10 +530,10 @@ nav .logo{
     left: 2.5%;
     transition: transform .2s;
 }
-#front .card img:hover{
+#front .card img:hover, #front2 .card img:hover{
     transform: scale(1.07);
 }
-#front .card p{
+#front .card p, #front2 .card p{
     font-size: 15px;
     font-family:sans-serif;
     font-weight: 400;
@@ -610,13 +610,13 @@ nav .logo{
         margin-bottom: 15px;
         
     }  
-    #front{
+    #front, #front2{
         width: 95%;
        display: flex;
        align-items: center;
        flex-direction: column;       margin: 0px auto;
     }
-    #front .card{
+    #front .card, #front2 .card{
         width: 100%;
         height: 550px;
         margin-bottom: 15px;
